@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Yuichiro Nakada, developer of Berry Linux.(http://berry-lab.net)
 
 ### More Information
 
