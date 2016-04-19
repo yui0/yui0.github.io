@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 Yuichiro Nakada, developer of Berry Linux.(http://berry-lab.net)
+https://github.com/yui0
 
 ### More Information
 
