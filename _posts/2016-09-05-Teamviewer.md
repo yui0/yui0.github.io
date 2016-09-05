@@ -3,6 +3,9 @@ layout: post
 title: Teamviewerで「Only LAN Connections Possible」が表示された時の対処方法
 ---
 
+## 動作環境
+ - LinuxのTeamviewer9
+
 ## Only LAN Connections Possible Problem
  - メニューの「Extras」→「Options」を選択。
  - 「Network settings」の「Incoming LAN connections」を「accept exclusively」に変更し、「OK」を押す。
