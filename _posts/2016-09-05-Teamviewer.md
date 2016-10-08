@@ -15,3 +15,7 @@ title: Teamviewerの不具合対処方法
 ## 「Connection to...」で止まった場合
  - ps auxで「/opt/teamviewer9/tv_bin/teamviewerd -d」のpidを調べる。
  - kill -KILL pidを実行する。
+
+## Teamviewer 11 on Linuxで「Not Ready...」
+ - 原因: rootで実行。
+ - 対処: root以外で実行する。
