@@ -19,3 +19,25 @@ title: Teamviewerの不具合対処方法
 ## Teamviewer 11 on Linuxで「Not Ready...」
  - 原因: rootで実行。
  - 対処: root以外で実行する。
+ - su [user] -c teamviewer
+
+		[Desktop Entry]
+		Comment[ja]=
+		Comment=
+		Exec=su berry -c teamviewer
+		GenericName[ja]=
+		GenericName=
+		Icon=web-duolingo
+		MimeType=
+		Name[ja]=Teamviewer
+		Name=Teamviewer
+		Path=
+		StartupNotify=true
+		Terminal=false
+		TerminalOptions=
+		Type=Application
+		X-DBUS-ServiceName=
+		X-DBUS-StartupType=
+		X-KDE-SubstituteUID=false
+		X-KDE-Username=
+		Name[ja_JP]=Teamviewer11
