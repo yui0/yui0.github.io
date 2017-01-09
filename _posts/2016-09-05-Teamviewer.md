@@ -41,3 +41,7 @@ title: Teamviewerの不具合対処方法
 		X-KDE-SubstituteUID=false
 		X-KDE-Username=
 		Name[ja_JP]=Teamviewer11
+
+## Teamviewer on Linuxがなかなか起動しない
+ - 原因: ネット環境の変化に対応できていない。
+ - 対処: systemctl restart teamviewerd を実行。
