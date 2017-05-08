@@ -9,7 +9,8 @@ title: DVD映像をiPad用に変換する
    - ※CSSがかかっていない時は、この部分は省略できる。
 
 ## HandBrakeでm4vに変換する
- - HandBrake [https://handbrake.fr/]
+ - HandBrake [http://www.gizmodo.jp/2017/05/handbrake-malware.html?utm_source=rss20&utm_medium=rss]
+   - ※追記: マルウェアの混入があったようです。上記サイトを参考。
    - ※Windows, Mac版あり。
    - プリセットを好みのものにする。ただ選ぶものによって、時間がかかる。
    - とりあえず、Fastで良い。
