@@ -18,3 +18,5 @@ title: Surface Pro 3でLinux
   - CONFIG_I2C_DESIGNWARE_CORE (?)
   - CONFIG_I2C_DESIGNWARE_PLATFORM (?)
   - CONFIG_I2C_HID (?)
+- ファームウェア (無線LAN)
+  - [mrvl](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/)
