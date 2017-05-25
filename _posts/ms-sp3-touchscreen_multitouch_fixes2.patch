@@ -1,0 +1,21 @@
+--- linux-4.11.2.orig/drivers/hid/hid-multitouch.c
++++ linux-4.11.2/drivers/hid/hid-multitouch.c
+@@ -633,6 +633,10 @@
+ 	    td->num_received >= td->num_expected)
+ 		return;
+ 
++	if (td->curdata.x == 0xffff && td->curdata.x == td->curdata.y &&
++	    td->curdata.w == 0xffff && td->curdata.w == td->curdata.h)
++		goto inc_num_received;
++
+ 	if (td->curvalid || (td->mtclass.quirks & MT_QUIRK_ALWAYS_VALID)) {
+ 		int active;
+ 		int slotnum = mt_compute_slot(td, input);
+@@ -676,6 +680,7 @@
+ 		}
+ 	}
+ 
++inc_num_received:
+ 	td->num_received++;
+ }
+ 

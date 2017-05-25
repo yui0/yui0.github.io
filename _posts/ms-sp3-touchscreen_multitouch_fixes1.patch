@@ -1,0 +1,22 @@
+--- linux-4.11.2.orig/drivers/hid/hid-multitouch.c
++++ linux-4.11.2/drivers/hid/hid-multitouch.c
+@@ -211,7 +211,8 @@
+ 		.quirks = MT_QUIRK_ALWAYS_VALID |
+ 			MT_QUIRK_IGNORE_DUPLICATES |
+ 			MT_QUIRK_HOVERING |
+-			MT_QUIRK_CONTACT_CNT_ACCURATE },
++			MT_QUIRK_CONTACT_CNT_ACCURATE |
++			MT_QUIRK_NOT_SEEN_MEANS_UP },
+ 	{ .name = MT_CLS_EXPORT_ALL_INPUTS,
+ 		.quirks = MT_QUIRK_ALWAYS_VALID |
+ 			MT_QUIRK_CONTACT_CNT_ACCURATE,
+@@ -1147,7 +1148,8 @@
+ 		return -ENOMEM;
+ 	}
+ 
+-	if (id->vendor == HID_ANY_ID && id->product == HID_ANY_ID)
++	if (id->vendor == HID_ANY_ID && id->product == HID_ANY_ID &&
++		id->group != HID_GROUP_MULTITOUCH_WIN_8)
+ 		td->serial_maybe = true;
+ 
+ 	/*
