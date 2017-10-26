@@ -14,4 +14,4 @@ And developer of [Whiz](http://berry-lab.net/whiz/whiz.html), IME.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[berry@berry-love.tk](mailto:berry@berry-love.tk)
