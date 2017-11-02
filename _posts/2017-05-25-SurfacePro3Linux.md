@@ -3,7 +3,7 @@ layout: post
 title: Surface Pro 3でLinux
 ---
 
-## カーネルの対応が必要 (4.11.2の時点での説明)
+## カーネルの対応が必要 (4.13.10の時点での説明)
 
 - パッチをあてる (Type Cover)
   - [ms-sp3-multitouch.patch](ms-sp3-multitouch.patch)
@@ -20,3 +20,9 @@ title: Surface Pro 3でLinux
   - CONFIG_I2C_HID (?)
 - ファームウェア (無線LAN)
   - [mrvl](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/commit/)
+
+```bash
+$ git clone git://git.marvell.com/mwifiex-firmware.git
+# mkdir -p /lib/firmware/mrvl/
+# cp mwifiex-firmware/mrvl/* /lib/firmware/mrvl/
+```
