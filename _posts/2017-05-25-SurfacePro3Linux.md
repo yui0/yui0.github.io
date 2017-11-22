@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Surface Pro 3でLinux
+tags: [berry, linux]
 ---
 
 ## カーネルの対応が必要 (4.13.10の時点での説明)
