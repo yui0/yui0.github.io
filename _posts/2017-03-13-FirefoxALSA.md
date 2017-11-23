@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Firefox 52以降でALSAを使う
+tags: [berry, linux]
 ---
 
 ## apulseを使う
