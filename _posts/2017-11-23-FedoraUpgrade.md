@@ -21,3 +21,5 @@ tags: [berry, linux, fedora]
 ```bash
 # dnf system-upgrade download --releasever=25 --best
 ```
+
+- /var/lib/dnf/system-upgrade以下にファイルが保存される
