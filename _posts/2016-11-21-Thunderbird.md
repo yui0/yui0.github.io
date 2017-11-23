@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LinuxとWindowsでThunderbirdを同期する
+tags: [berry, linux, windows]
 ---
 
 ## Dropboxを使う
