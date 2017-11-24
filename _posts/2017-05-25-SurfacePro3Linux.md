@@ -27,3 +27,24 @@ $ git clone git://git.marvell.com/mwifiex-firmware.git
 # mkdir -p /lib/firmware/mrvl/
 # cp mwifiex-firmware/mrvl/* /lib/firmware/mrvl/
 ```
+
+## Xorgの設定
+
+- /etc/X11/xorg.conf.d/00-surfacepro3-libinput.conf
+
+```/etc/X11/xorg.conf.d/00-surfacepro3-libinput.conf
+Section "InputClass"
+	Identifier "SP3-keyboard"
+	MatchIsKeyboard "on"
+	Driver "libinput"
+	#Option "XkbLayout" "us,ca"
+	Option "XkbOptions" "grp:alt_shift_toggle"
+EndSection
+
+Section "InputClass"
+	Identifier "SP3-touchpad"
+	MatchIsTouchpad "on"
+	Driver "libinput"
+	Option "Tapping" "on"
+EndSection
+```
