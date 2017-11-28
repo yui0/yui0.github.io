@@ -17,3 +17,8 @@ tags: [berry, linux]
   - 対策は、下記の通り。
   - open("/dev/snd/controlC0", O_RDWR) is blocked by sandbox. workaround: set security.sandbox.content.write_path_whitelist to /dev/snd/controlC0,/dev/snd/pcmC0D0p.
   - Firefoxの「about:config」に「security.sandbox.content.write_path_whitelist」を作成し「/dev/snd/controlC0,/dev/snd/pcmC0D0p」を追加。
+
+## Firefox 57以降の注意点
+
+- 57以降で[サンドボックスのエラー](https://artixlinux.org/forum/index.php?topic=87.0)が再び出る。
+  - Firefoxの「about:config」に「security.sandbox.content.write_path_whitelist」を作成し「/dev/snd/」を追加。(最後の/が大事)
