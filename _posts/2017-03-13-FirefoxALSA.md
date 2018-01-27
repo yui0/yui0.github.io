@@ -22,3 +22,8 @@ tags: [berry, linux]
 
 - 57以降で[サンドボックスのエラー](https://artixlinux.org/forum/index.php?topic=87.0)が再び出る。
   - Firefoxの「about:config」に「security.sandbox.content.write_path_whitelist」を作成し「/dev/snd/」を追加。(最後の/が大事)
+
+## Firefox 58以降の注意点
+
+- 58以降で[サンドボックスのエラー](https://github.com/i-rinat/apulse/commit/d86760b225cc44d07fa12662519f4d8bbcdb3679)が再び出る。
+  - Firefoxの「about:config」に「security.sandbox.content.syscall_whitelist」を作成し「16」を追加。(64bit版の場合。32bitやARMは54)
