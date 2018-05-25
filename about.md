@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-![nyanko]({{ site.baseurl }}/images/nyanko.jpg =250x)
-
 Yuichiro Nakada, developer of [Berry Linux](http://berry-lab.net).
 
 And developer of [Whiz](http://berry-lab.net/whiz/whiz.html), IME.
@@ -18,3 +16,5 @@ And developer of [Whiz](http://berry-lab.net/whiz/whiz.html), IME.
 ### Contact me
 
 [berry@toukai.me](<mailto:berry@toukai.me>)
+
+![nyanko]({{ site.baseurl }}/images/nyanko.jpg)
