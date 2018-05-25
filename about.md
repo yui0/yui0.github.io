@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![nyanko]({{ site.baseurl }}/images/nyanko.jpg)
+![nyanko]({{ site.baseurl }}/images/nyanko.jpg =250x)
 
 Yuichiro Nakada, developer of [Berry Linux](http://berry-lab.net).
 
