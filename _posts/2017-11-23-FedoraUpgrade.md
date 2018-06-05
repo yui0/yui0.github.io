@@ -7,7 +7,7 @@ tags: [berry, linux, fedora]
 ※必ずバックアップを取って行うこと!
 ※失敗するとシステムを破壊する可能性あり!
 
-## dnfを使う
+## dnf system-upgradeを使う
 
 - dnf-plugin-system-upgradeをインストール
 
@@ -23,3 +23,13 @@ tags: [berry, linux, fedora]
 ```
 
 - /var/lib/dnf/system-upgrade以下にファイルが保存される
+
+## dnfを使う
+
+- /etc/yum.repos.d/fedora.repoをアップグレードするリポジトリに変更
+
+```bash
+# dnf update
+```
+
+- ダウンロードしたファイルで更新。※毎回かなりの変更があるので、パッケージを注意してすべて入れないとシステムが起動しなくなる
