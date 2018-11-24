@@ -21,6 +21,14 @@ WordPressを使えるようにする。
 - もしくはレンタルサーバーの簡単インストールを使う。
 - WordPressを置いたURLにブラウザーからアクセスし、初期設定をする。
 
+## オススメのテーマ
+
+- 外観→テーマ→新規 でZIPファイルのままインストールする。
+- [Cocoon](https://wp-cocoon.com/downloads/)
+  - 子テーマもダウンロードする。
+- [Luxeritas](https://thk.kanzae.net/wp/dl/)
+  - 子テーマもダウンロードする。
+
 ## Markdown記法で投稿できるようにする
 
 - WordPressにプラグインを入れる。
