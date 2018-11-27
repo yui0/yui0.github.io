@@ -16,6 +16,12 @@ modified: 2018-11-27
 
 ## YOLO9000
 
+- 顔認識
+
+```bash
+wget https://modeldepot.io/assets/uploads/models/models/2ab9c908-15c0-438d-905e-e75363c52c72_azFace.zip -O azFace.zip
+```
+
 - [https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/](https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/)
 
 ## データセット
