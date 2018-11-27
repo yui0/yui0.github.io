@@ -9,7 +9,7 @@ tags: [deep,learning]
 ## ニューラルネットワーク
 
 - 何層かのニューロンで構成される。
-  - ニューロンの式: $$ f \( wx+b \) $$ $f \left( wx+b \right)$
+  - ニューロンの式: $$ f \left wx+b \right $$
 
 ```math
 f \left( wx+b \right)
