@@ -2,6 +2,7 @@
 layout: post
 title: Deep Learning 覚書
 tags: [deep,learning]
+modified: 2018-11-27
 ---
 
 個人的な Deep Learning の覚え書き。
@@ -10,6 +11,8 @@ tags: [deep,learning]
 
 - 何層かのニューロンで構成される。
   - ニューロンの式: $$ f \left( wx + b \right) $$
+  - 活性化
+    - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 
 ## データセット
 
