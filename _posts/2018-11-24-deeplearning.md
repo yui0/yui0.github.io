@@ -14,6 +14,10 @@ modified: 2018-11-27
   - 活性化
     - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 
+## YOLO9000
+
+- [https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/](https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/)
+
 ## データセット
 
 - [http://www.robots.ox.ac.uk/~vgg/data/](http://www.robots.ox.ac.uk/~vgg/data/)
