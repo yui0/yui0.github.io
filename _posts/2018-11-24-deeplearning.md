@@ -11,17 +11,6 @@ tags: [deep,learning]
 - 何層かのニューロンで構成される。
   - ニューロンの式: $$ f \left( wx + b \right) $$
 
-```math
-f \left( wx+b \right)
-```
-
-$2^3$
-
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
-\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
-
 $$
 \begin{align*}
 \frac{\partial \theta}{\partial t}= \frac{\partial}{\partial z}
