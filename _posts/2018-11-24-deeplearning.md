@@ -9,7 +9,7 @@ tags: [deep,learning]
 ## ニューラルネットワーク
 
 - 何層かのニューロンで構成される。
-  - ニューロンの式: $f \left( wx+b \right)$
+  - ニューロンの式: $$ f \( wx+b \) $$ $f \left( wx+b \right)$
 
 ```math
 f \left( wx+b \right)
@@ -30,9 +30,3 @@ $$
 $$
 
 半径 $$ r $$ の円の面積は $$ \pi r^2 $$ であり、球の体積は $$ \frac{4}{3}\pi r^3  $$ である。
-
-## Jekyll-Now
-
-- https://github.com/gjtorikian/jekyll-last-modified-at
-- Kramdown はMathJaxによる数式表示をサポート
-  - <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
