@@ -29,6 +29,8 @@ $$
 \end{align*}
 $$
 
+半径 $$ r $$ の円の面積は $$ \pi r^2 $$ であり、球の体積は $$ \frac{4}{3}\pi r^3  $$ である。
+
 ## Jekyll-Now
 
 - https://github.com/gjtorikian/jekyll-last-modified-at
