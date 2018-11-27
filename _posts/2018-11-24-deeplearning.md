@@ -11,6 +11,12 @@ tags: [deep,learning]
 - 何層かのニューロンで構成される。
   - ニューロンの式: $$ f \left( wx + b \right) $$
 
+## データセット
+
+- [http://www.robots.ox.ac.uk/~vgg/data/](http://www.robots.ox.ac.uk/~vgg/data/)
+- [https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
+- [https://caffe2.ai/docs/datasets.html](https://caffe2.ai/docs/datasets.html)
+
 $$
 \begin{align*}
 \frac{\partial \theta}{\partial t}= \frac{\partial}{\partial z}
