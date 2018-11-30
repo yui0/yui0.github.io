@@ -2,7 +2,7 @@
 layout: post
 title: Deep Learning 覚書
 tags: [deep,learning]
-modified: 2018-11-27
+modified: 2018-11-30
 ---
 
 個人的な Deep Learning の覚え書き。
@@ -13,6 +13,20 @@ modified: 2018-11-27
   - ニューロンの式: $$ f \left( wx + b \right) $$
   - 活性化
     - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
+
+## Convolution(畳み込み層)
+
+### 順伝播
+
+- 前層 In → Convolution → Out 後続層
+
+$$ Out = Weight * In $$
+
+### 逆伝播
+
+- 前層 dIn ← Convolution ← dOut 後続層
+
+$$ dIn = {}^t\!Weight * dOut $$
 
 ## YOLO9000
 
