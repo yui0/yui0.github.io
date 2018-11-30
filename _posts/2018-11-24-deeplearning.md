@@ -27,6 +27,8 @@ $$ Out = Weight * In $$
 - 前層 dIn ← Convolution ← dOut 後続層
 
 $$ dIn = {}^t\!Weight * dOut $$
+$$ dW = {}^t\!In * dOut $$
+dB は Channel 毎の dOut の総和
 
 ## YOLO9000
 
