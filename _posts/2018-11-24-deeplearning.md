@@ -12,18 +12,30 @@ modified: 2018-11-30
 - 何層かのニューロンで構成される。
   - ニューロンの式: $$ y = f \left( wx + b \right) $$
     - $$ y $$ は出力、$$ f $$ は活性化関数、$$ w $$ は重み、$$ b $$ はバイアス。
-  - 活性化
+  - 活性化関数
     - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 
 ## 全結合層
 
-- 前層 In → Fully connected layer → Out 後続層
+### 順伝播
+
+- 前層 In:x → Fully connected layer → Out:y 後続層
   - $$ y $$ は出力、$$ f $$ は活性化関数、$$ w $$ は重み、$$ b $$ はバイアス。
 
 $$ y = f \left( wx + b \right) $$
 
-- 活性化
+- 活性化関数
   - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
+
+### 逆伝播
+
+- 前層 dIn ← Fully connected layer ← dOut 後続層
+
+$$ dIn = {}^t\!Weight * dOut $$
+
+### 重みの更新
+
+$$ dW = {}^t\!In * dOut $$
 
 ## Convolution(畳み込み層)
 
@@ -38,7 +50,11 @@ $$ Out = Weight * In $$
 - 前層 dIn ← Convolution ← dOut 後続層
 
 $$ dIn = {}^t\!Weight * dOut $$
+
+### 重みの更新
+
 $$ dW = {}^t\!In * dOut $$
+
 dB は Channel 毎の dOut の総和
 
 ## YOLO9000
