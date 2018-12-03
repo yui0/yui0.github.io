@@ -10,9 +10,20 @@ modified: 2018-11-30
 ## ニューラルネットワーク
 
 - 何層かのニューロンで構成される。
-  - ニューロンの式: $$ f \left( wx + b \right) $$
+  - ニューロンの式: $$ y = f \left( wx + b \right) $$
+    - $$ y $$ は出力、$$ f $$ は活性化関数、$$ w $$ は重み、$$ b $$ はバイアス。
   - 活性化
     - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
+
+## 全結合層
+
+- 前層 In → Fully connected layer → Out 後続層
+  - $$ y $$ は出力、$$ f $$ は活性化関数、$$ w $$ は重み、$$ b $$ はバイアス。
+
+$$ y = f \left( wx + b \right) $$
+
+- 活性化
+  - シグモイド関数: $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 
 ## Convolution(畳み込み層)
 
