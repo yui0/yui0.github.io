@@ -2,7 +2,7 @@
 layout: post
 title: Deep Learning 覚書
 tags: [deep,learning]
-modified: 2018-11-30
+modified: 2018-12-14
 ---
 
 個人的な Deep Learning の覚え書き。
@@ -12,13 +12,16 @@ modified: 2018-11-30
 ### 偏微分
 
 複数の変数がある関数で、1つの変数のみ微分することを、偏微分と言う。
+
 例えば $$ f(a, b, c) = a^2 + b^2 + c^2 + 1 $$ として、$$ f $$ の $$ a $$ に関する偏微分は $$ \frac {\partial f}{\partial a} = 2a $$ です。
+
 $$ a $$ 以外の変数はすべて定数と見なすので、$$ a $$ を含まない項は消えてしまいます。
+
 微分の記号は $$ d $$ の代わりに $$ \partial $$ を使います。
 
 ### 合成関数の偏微分公式
 
-a が b_1, b_2, \dots, b_n の関数（複数変数を持つ）で、b_1, b_2, \dots, b_n がそれぞれ c の関数である場合、a を c で偏微分すると下記のようになります。
+$$ a $$ が $$ b_1, b_2, \dots, b_n $$ の関数（複数変数を持つ）で、b_1, b_2, \dots, b_n がそれぞれ c の関数である場合、a を c で偏微分すると下記のようになります。
 
 $$ \[\frac {\partial a}{\partial c} = \sum_{k=1}^n \frac {\partial a}{\partial b_k} \frac {\partial b_k}{\partial c}\] $$
 
