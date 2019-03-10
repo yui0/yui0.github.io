@@ -43,3 +43,13 @@ WordPressを使えるようにする。
 ```
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 ```
+
+## バックアップを取る
+
+- UpdraftPlusを使う。
+
+## アプリを紹介する
+
+- アプリーチを使うと楽。
+  - http://mama-hack.com/app-reach
+  - http://hituji-affiliate.com/app-reach/
