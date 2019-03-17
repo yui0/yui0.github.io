@@ -35,13 +35,13 @@ $$ [\frac {\partial a}{\partial c} = \sum_{k=1}^n \frac {\partial a}{\partial b_
 
 ## 逆伝播の考え方
 
-$$ δLj=∂C∂aLjσ′(zLj) $$
+$$ \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) $$
 
-$$ δl=((wl+1)Tδl+1)⊙σ′(zl) $$
+$$ \delta^l = ((w^{l+1})^T \delta^{l+1}) \odot \sigma'(z^l) $$
 
-$$ ∂C∂blj=δlj $$
+$$ \frac{\partial C}{\partial b^l_j} = \delta^l_j $$
 
-$$ ∂C∂wljk=al−1kδlj $$
+$$ \frac{\partial C}{\partial w^l_{jk}} = a^{l-1}_k \delta^l_j $$
 
 ## ニューラルネットワーク
 
