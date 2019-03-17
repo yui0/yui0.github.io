@@ -36,6 +36,7 @@ $$ [\frac {\partial a}{\partial c} = \sum_{k=1}^n \frac {\partial a}{\partial b_
 ## 逆伝播の考え方
 
 $$ \delta^L_j = \frac{\partial C}{\partial a^L_j} \sigma'(z^L_j) $$
+$$ \delta^L = \nabla_a C \odot \sigma'(z^L) $$
 
 $$ \delta^l = ((w^{l+1})^T \delta^{l+1}) \odot \sigma'(z^l) $$
 
