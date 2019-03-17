@@ -2,12 +2,20 @@
 layout: post
 title: Deep Learning 覚書
 tags: [deep,learning]
-modified: 2018-12-14
+modified: 2019-03-17
 ---
 
 個人的な Deep Learning の覚え書き。
 
 ## 必要な数学の知識
+
+### 記号
+
+* δ(デルタ): 微小正数を表す。
+* ⊿(デルタ): 差分や微小増分を表す。
+* d(ディー): 常微分。
+* ∂(ラウンド・ディー): 偏微分。幾何学では領域の境界を表す。
+* ∇(ナブラ): 偏微分ベクトル。
 
 ### 偏微分
 
@@ -23,7 +31,7 @@ $$ a $$ 以外の変数はすべて定数と見なすので、$$ a $$ を含ま�
 
 $$ a $$ が $$ b_1, b_2, \dots, b_n $$ の関数（複数変数を持つ）で、$$ b_1, b_2, \dots, b_n $$ がそれぞれ $$ c $$ の関数である場合、 $$ a $$ を $$ c $$ で偏微分すると下記のようになる。
 
-$$ \[\frac {\partial a}{\partial c} = \sum_{k=1}^n \frac {\partial a}{\partial b_k} \frac {\partial b_k}{\partial c}\] $$
+$$ [\frac {\partial a}{\partial c} = \sum_{k=1}^n \frac {\partial a}{\partial b_k} \frac {\partial b_k}{\partial c}] $$
 
 ## ニューラルネットワーク
 
