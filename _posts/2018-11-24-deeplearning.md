@@ -33,6 +33,16 @@ $$ a $$ が $$ b_1, b_2, \dots, b_n $$ の関数（複数変数を持つ）で�
 
 $$ [\frac {\partial a}{\partial c} = \sum_{k=1}^n \frac {\partial a}{\partial b_k} \frac {\partial b_k}{\partial c}] $$
 
+## 逆伝播の考え方
+
+$$ δLj=∂C∂aLjσ′(zLj) $$
+
+$$ δl=((wl+1)Tδl+1)⊙σ′(zl) $$
+
+$$ ∂C∂blj=δlj $$
+
+$$ ∂C∂wljk=al−1kδlj $$
+
 ## ニューラルネットワーク
 
 - 何層かのニューロンで構成される。
