@@ -6,9 +6,44 @@ tags: [berry, linux, geocoder]
 
 住所から緯度経度を取得する方法。
 
+## WebAPIを使う(Python)
+
+```geocoding.py
+# pip3 install requests bs4 tqdm lxml
+
+import requests
+from bs4 import BeautifulSoup
+import time
+from tqdm import tqdm
+
+def get_lat_lon_from_address(address_l):
+    """
+    address_lにlistの形で住所を入れてあげると、latlonsという入れ子上のリストで緯度経度のリストを返す関数。
+    >>>>get_lat_lon_from_address(['東京都文京区本郷7-3-1','東京都文京区湯島３丁目３０−１'])
+    [['35.712056', '139.762775'], ['35.707771', '139.768205']]
+    """
+    url = 'http://www.geocoding.jp/api/'
+    latlons = []
+    for address in tqdm(address_l):
+        payload = {'q': address}
+        r = requests.get(url, params=payload)
+        ret = BeautifulSoup(r.content,'lxml')
+        if ret.find('error'):
+            raise ValueError(f"Invalid address submitted. {address}")
+        else:
+            lat = ret.find('lat').string
+            lon = ret.find('lng').string
+            latlons.append([lat,lon])
+            time.sleep(10)
+    return latlons
+
+latlons = get_lat_lon_from_address(['東京都文京区本郷7-3-1','東京都文京区湯島３丁目３０−１']);
+print(latlons);
+```
+
 ## WebAPIを使う(Ruby)
 
-```
+```geocoding.rb
 require 'net/http'
 require 'uri'
 require 'json'
@@ -97,6 +132,7 @@ puts r.first.coordinates
 
 ## 参照
 
+- [住所（市区町村番地）から緯度経度を取得する](https://qiita.com/laqiiz/items/842fe2a32e80bac92364)
 - http://kamoland.com/wiki/wiki.cgi?SQLite%A4%C7%B4%CA%B0%D7%A5%EA%A5%D0%A1%BC%A5%B9%A5%B8%A5%AA%A5%B3%A1%BC%A5%C0
 - http://demouth.hatenablog.com/entry/2014/02/03/073304
 - https://atyks.hateblo.jp/entry/2016/07/01/000000
