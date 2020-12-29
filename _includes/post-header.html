@@ -1,8 +1,9 @@
 <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
 <div data-purplecoat="shiori" data-purplecoat-label="post-header.html">
-<p class="text-muted">{{ page.date | date_to_string }} [Update:<div id="last-modified"></div>]</p>
+<p class="text-muted">{{ page.date | date_to_string }} [Update:<span id="last-modified"></span>]</p>
 </div>
 <script>
+// https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html
 // {{ site.time | date: '%Y-%m-%d' }} {{ last_modified_at page.modified }}
 function setModifiedDate() {
   if (document.getElementById('last-modified')) {
@@ -18,5 +19,5 @@ function setModifiedDate() {
       });
   }
 }
-setModifiedDate();
+window.addEventListener('load', setModifiedDate());
 </script>
