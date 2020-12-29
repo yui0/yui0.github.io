@@ -1,4 +1,22 @@
 <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
 <div data-purplecoat="shiori" data-purplecoat-label="post-header.html">
-<p class="text-muted">{{ page.date | date_to_string }} [Update:{{ site.time | date: '%Y-%m-%d' }} {{ last_modified_at page.modified }}]</p>
+<p class="text-muted">{{ page.date | date_to_string }} [Update:<div id="last-modified"></div>]</p>
 </div>
+<script>
+// {{ site.time | date: '%Y-%m-%d' }} {{ last_modified_at page.modified }}
+function setModifiedDate() {
+  if (document.getElementById('last-modified')) {
+    fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
+      .then((response) => {
+        return response.json();
+      })
+      .then((commits) => {
+        var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+        if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
+          document.getElementById('last-modified').textContent = "Last Modified: " + modified;
+        }
+      });
+  }
+}
+setModifiedDate();
+</script>
