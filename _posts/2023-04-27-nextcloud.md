@@ -9,6 +9,9 @@ tags: [lolipop,server,nextcloud]
 Nextcloudを26にしたところ、あちこちで不具合が発生そし、使い物にならなくなりました。
 24に戻したところ使えるようになったので、この記事では24を使用します。
 
+※その後クライアントアプリがなぜか使えなくなりました。
+Nextcloud27とPHP8.2モジュールに変更したところ復活しました。
+
 ## ダウンロード
 
 * ここから24をダウンロードする。(https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip)
