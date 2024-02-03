@@ -18,6 +18,33 @@ tags: [android,raspberry,pi]
 
 ## OSの書き込み
 
-Raspberry Pi Imager などを使って、SDカードに書き込む。
+Raspberry Pi Imager などを使って、SDカードなどに書き込む。
 
-##
+## パーティションの拡張
+
+/dev/sd?4 の userdata パーティションを拡張しておくとよい。
+
+## GooglePlayストアのインストール
+
+Open the “Settings” app.
+Go to “System” > “Advanced settings”.
+Enable the first option “Reboot to recovery”:
+
+In theory, F5 should work to display this screen, but it doesn’t work anymore once the reboot to recovery is enabled.
+
+Install Google Apps
+
+Click on “Mount”.
+This is where you can choose which partition to mount (= making the USB drive accessible).
+We need to mount the USB key, so check the USB item in the list.
+Then, back on the main menu, click on “Install”.
+Click on “Select Storage” and choose the USB key.
+Finally, your files appear.
+Click on the NikGapps file to install it:
+
+Sign in to the Play Store
+
+## キーアサイン
+
+F1	F2	F3	F4	F5	F11	F12
+ホーム	戻る	マルチタスク	メニュー	電源	音量DOWN	音量UP
