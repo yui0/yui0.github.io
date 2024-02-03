@@ -5,6 +5,7 @@ tags: [android,raspberry,pi]
 ---
 
 ラズパイ4でandroidを使えるようにしてみる。
+※試した環境が悪いのか、重くて実用的ではなかった。3D系は全く期待できない。
 
 ## 必要な物
 
@@ -14,7 +15,9 @@ tags: [android,raspberry,pi]
   AOSP13-20220907-KonstaKANG-rpi4.zip
 4. GooglePlayストア (https://nikgapps.com/downloads)
   Home / Realeases / NikGapps-T / core
-5. Device ID
+5. Device ID (「このデバイスはGoogleによって認定されていません」修正用)
+  https://www.apkmirror.com/apk/evozi/device-id/device-id-1-3-2-release/
+6. AnyDesk (リモート操作用)
 
 ## OSの書き込み
 
@@ -43,6 +46,9 @@ Finally, your files appear.
 Click on the NikGapps file to install it:
 
 Sign in to the Play Store
+
+GSFコード
+https://www.google.com/android/uncertified/
 
 ## キーアサイン
 
