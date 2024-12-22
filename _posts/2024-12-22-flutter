@@ -1,0 +1,39 @@
+---
+layout: post
+title: flutterのインストール(Linux)
+tags: [flutter,berry,linux]
+---
+
+## flutterのインストール
+
+```
+# 必要なパッケージ
+dnf install clang++ llvm lld
+dnf install ninja
+dnf install gtk3-devel
+
+# flutterのダウンロード
+git clone -b master https://github.com/flutter/flutter.git
+
+# 問題ないかチェック
+export PATH="$PATH:`pwd`/bin"
+flutter doctor
+
+# 最新版に更新
+flutter channel master
+flutter upgrade
+
+flutter pub outdated
+flutter pub upgrade --major-versions
+```
+
+## flutterのテスト
+
+```
+flutter create test
+flutter devices
+flutter run
+flutter clean
+```
+
+## 参考
