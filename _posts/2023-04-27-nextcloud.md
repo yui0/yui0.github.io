@@ -23,28 +23,39 @@ tags: [lolipop,server,nextcloud]
 1. **WAF (Web Application Firewall) を無効化**(重要!)
   * 🔒 *セキュリティ設定を見直して有効化も検討してください。*
 
-* 使うURLの独自SSL（無料）を設定しておく。
-* MySQLを使用するなら、ロリポップの管理画面で、データベースを作成する。
-  * ユーザ名、パスワード、データベース名、サーバー名を記録しておく。
-* ロリポップのフォルダに先程のZIPファイルを展開する。
-  * 例えば、web/[URL]/以下に展開。
-* ブラウザからアクセスする。
-  * 例えば、web/[URL]/ならhttps://[URL]/nextcloud
+2. **独自SSL (無料) を設定**
+  * 🛡️ URLのSSL化は忘れずに。
 
-## Tips
+3. **MySQL データベースを作成**
+  * ⚡ MySQLを使用するなら、ロリポップの管理画面で、データベースを作成する。
+    * ユーザ名、パスワード、データベース名、サーバー名を記録しておく。
 
+4. **ZIP ファイルを展開**
+  * 📂 ロリポップのフォルダに先程のZIPファイルをアップロードして展開します。
+  * 例: `web/[URL]/` 以下に展開。
+
+5. **ブラウザでセットアップ**
+  * 🌐 例えば、web/[URL]/なら`https://[URL]/nextcloud` にアクセスしてインストールを進める。
+
+## 💡 トラブルシューティング Tips
+
+### 🛠️ ファイルエントリーの再構築 (MySQL 操作)
 * ストレージ内のファイルエントリーを再構築したい。(mysql)
-```
+データベースの `oc_filecache` テーブルを削除して再構築する:
+```sql
 DELETE FROM oc_filecache;
 ```
 
-* ファイルが認識しなくなった。
-```
+### 🔄 ファイルが認識されない場合
+次のコマンドでスキャン＆クリーンアップ:
+```bash
 cd web/[URL]/nextcloud
 php8.2 occ files:scan --all
 php8.2 occ files:cleanup
 ```
 
-## ref.
+## 📚 参考リンク
 
-* https://www.digitalboo.net/post/6601/xserver-nextcloud-warning
+* 📖 [Nextcloud 警告についての記事](https://www.digitalboo.net/post/6601/xserver-nextcloud-warning)
+
+これでNextcloudをスムーズにインストールできるはずです！ 🚀
