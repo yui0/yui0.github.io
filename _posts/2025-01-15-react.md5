@@ -1,1 +1,78 @@
+---
+layout: post
+title: 🚀 React Native セットアップ (Linux)
+tags: [react,native,berry,linux]
+---
 
+🚀 **React Native セットアップ (Linux)**
+
+## 📥 **インストール手順**
+
+### 1️⃣ 必須ツールのインストール
+
+```sh
+npm install -g yarn # 📦 Yarnをグローバルインストール
+npm install -g npm-check-updates # 🔄 npm更新ツールをインストール
+```
+
+### 2️⃣ プロジェクト作成と必要パッケージのインストール
+
+1. **新規プロジェクト作成**
+   - 空のテンプレートで新規プロジェクトを作成します:
+
+   ```sh
+   yarn create expo-app --template blank test
+   cd test
+   ```
+
+2. **Expoパッケージのインストール**
+   - 次のコマンドを順に実行し、必要なライブラリを追加します:
+
+   ```sh
+   npx expo install react-dom react-native-web @expo/metro-runtime # 🌐 Web対応パッケージ
+   npx expo install @react-navigation/bottom-tabs @react-navigation/drawer @react-navigation/native @react-navigation/native-stack @react-native-async-storage/async-storage # 🧭 ナビゲーション関連
+   npx expo install @expo/vector-icons # 🎨 アイコン
+   npx expo install expo-camera expo-gl # 📷 カメラ & グラフィックス
+   npx expo install react-native-crypto-js react-native-gesture-handler react-native-reanimated react-native-safe-area-context react-native-screens # 🤏 ジェスチャー & セーフエリア対応
+   npx expo install expo-file-system expo-av expo-system-ui # 🗂️ ファイル & マルチメディア対応
+   npx expo install axios # 🌐 HTTPリクエスト
+   ```
+
+3. **環境変数の設定**
+   AndroidとJavaのパスを設定します:
+
+   ```sh
+   export ANDROID_HOME=~/android
+   export JAVA_HOME=~/android-studio/jbr
+   ```
+
+4. **プロジェクト開始**
+   開発サーバーを起動します:
+
+   ```sh
+   npx expo start
+   ```
+
+### 3️⃣ 🚫 **使わない古いコマンド（参考）**
+
+以下のコマンドは現在のExpoやReact Native環境では不要です:
+
+```sh
+npm uninstall expo-cli # Expo CLIのアンインストール
+npm uninstall react-native-cli # React Native CLIのアンインストール
+```
+
+```sh
+#npm install -g react-native
+#react-native --version
+npm cache clean --force
+
+#npx @react-native-community/cli init test
+#yarn install react-native-web
+
+#npx react-native start
+#npx react-native run-android
+#npx react-native run-ios
+```
+
+これでセットアップは完了です！✨ 🚀
