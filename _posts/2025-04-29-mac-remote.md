@@ -64,10 +64,44 @@ send_magic_packet(mac_address)
 start_screen_sharing("MacPro")
 ```
 
+## 🛠️ コード全て
+
+```python
+import socket
+import struct
+import os
+
+def make_magic_packet(mac_address):
+    mac_bytes = bytes.fromhex(mac_address.replace(':', ''))
+    return b'\xff' * 6 + mac_bytes * 16
+
+def send_magic_packet(mac_address, broadcast_ip='255.255.255.255', port=9):
+    packet = make_magic_packet(mac_address)
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as sock:
+        sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        sock.sendto(packet, (broadcast_ip, port))
+    print(f'Magic packet sent to {mac_address}')
+
+def start_screen_sharing(hostname):
+    applescript = f'''
+    tell application "Screen Sharing"
+        activate
+        open location "vnc://{hostname}"
+    end tell
+    '''
+    os.system(f'osascript -e \'{applescript}\'')
+
+# 使用例
+mac_address = '00:11:22:33:44:55'  # 対象のMACアドレス
+hostname = '192.168.1.100'  # 対象のMacのIPアドレス
+
+send_magic_packet(mac_address)
+#start_screen_sharing(hostname)
+start_screen_sharing("MacPro")
+```
+
 # 🎯まとめ
 - まずMagic Packetを送って💨
 - そのあと画面共有で接続🖥️
 
 超シンプルに、リモートからMac操作ができちゃいます！👏
-
-必要ならさらにイラスト入りの図解版も作れます！作成してみますか？✨
