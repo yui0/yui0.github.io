@@ -4,17 +4,23 @@ title: About
 permalink: /about/
 ---
 
-Yuichiro Nakada, developer of [Berry Linux](http://berry-lab.net).
+### Yuichiro Nakada
 
-And developer of [Whiz](http://berry-lab.net/whiz/whiz.html), IME.
+🐧 The developer of [Berry Linux](https://berry-lab.net).
 
-### More Information
+⌨️ And developer of [Whiz](https://berry-lab.net/whiz/whiz.html), IME.
 
-- [https://github.com/yui0](https://github.com/yui0)
-- [http://berry-lab.net](http://berry-lab.net)
+### 🔗 More Information
 
-### Contact me
+🌐 Berry Linux:
+[https://berry-lab.net](https://berry-lab.net)
 
+💻 GitHub:
+[https://github.com/yui0](https://github.com/yui0)
+
+### 📬 Contact me
+
+✉️ E-Mail:
 [berry@toukai.me](<mailto:berry@toukai.me>)
 
-![nyanko]({{ site.baseurl }}/images/nyanko.jpg)
+🐱 ![nyanko]({{ site.baseurl }}/images/nyanko.jpg)
