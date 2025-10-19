@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🌟 XServer VPS│無料VPSの手動更新を自動化する方法
+title: 🌟 XServer VPS│無料VPSの手動更新を自動化する方法(※現在不可)
 tags: [XServer,VPS,github,auto]
 ---
 
