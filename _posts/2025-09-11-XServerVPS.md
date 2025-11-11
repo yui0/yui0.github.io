@@ -50,6 +50,12 @@ tags: [XServer,VPS,github,auto]
 * 🤖 実行内容
   👉 ログイン → 「契約情報」 → 「更新」 → 「無料VPS継続」ボタンをクリック
 
+### ✨ おまけ
+
+$ vi ~/.ssh/config
+ServerAliveInterval 300
+TCPKeepAlive yes
+
 ### ✨ まとめ
 
 面倒な更新作業も
